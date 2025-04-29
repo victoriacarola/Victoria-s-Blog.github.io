@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Victoria's Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .navbar {
+      font-size: 22px;
+    }
+
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    /* Hero section with glass effect */
+    .hero {
+      background-image: url('../assets/nebel.jpg');
+      background-size: cover;
+      background-position: center;
+      color: rgb(34, 35, 37);
+      padding: 110px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    /* Card styling */
+    .card   {
+      
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card-title{
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #343a40;
+      color: #d1d1d1;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #555;
+      font-size: 1.2em; 
+    }
+
+    /* Button styling */
+    .btn-primary {
+      background-color: #1d467a;
+      border: none;
+      transition: background-color 0.3s;
+      font-size: 1.2em; /* Increases text size */
+      padding: 0.6em 1.1em; /* Adjusts padding for larger button size */
+    }
+    
+    .btn-secondary {
+      background-color: #1d467a;
+      border: none;
+      transition: background-color 0.3s;
+      font-size: 1em; /* Increases text size */
+      padding: 0.6em 1.1em; /* Adjusts padding for larger button size */
+    }
+
+    .btn-primary:hover {
+      background-color: #1d467a;
+    }
+
+    /* Adjust post-thumbnail for rounded corners */
+    .post-thumbnail {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    form {
+      font-size: 1.2em;
+    }
+
+    .form-control{
+        font-size: 20px;
+    }
+
+    .label{
+      font-size: 1.2em;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="e_home.html">Victoria's Blog</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="e_home.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                      <li><a class="dropdown-item active" href="websites.html">Websites</a></li>
+                      <li><a class="dropdown-item" href="Apps.html">Apps</a></li>
+                      <li><a class="dropdown-item" href="api.html">API Softwares</a></li>
+                      <li><a class="dropdown-item" href="games.html">Games</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  
+          <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      English
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+<li><a class="dropdown-item" href="d_about.html">Deutsch</a></li>
+                     <li><a class="dropdown-item" href="e_blog.html">Español</a></li>-->
+        
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-3">ALIFF GmbH</h1>
+      <br>
+      <p class="lead">aliff.ch</p>
+      <br>
+      <a href="https://aliff.ch" class="btn btn-primary btn-lg">Check out this Webpage</a>
+     <div>
+        
+     </div> <br><br>
+      
+    </div>
+  </header>
+  
+<div>
+
+<br>
+</div>
+<br>
+  <!-- Blog Section -->
+  <main class="container my-5" id="blogPosts">
+   
+            <section class="container">
+                <h2>
+                    The ALIFF- Software Solutions GmbH is an on Websdevelopment focused Company based in Zurich
+                    which has an intern Plattform where we handle all the client and Project steering and serverupdates, 
+                    such as our databases regarding the client acquisation.
+                    <br>I also got to take responsibility as a project manager for the development of the Websites we've created.
+                    <br><br>There for I worked with <b>PHP, HTML, CSS, JavaScript, WordPress and Elementor</b>.
+                </h2>
+              </section>
+        </div>
+        <br><br><br><br><br>
+        <form onsubmit="sendEmail(); return false;">
+          <h2>If you have any further questions, requests or criticism, feel free to contact me.</h2>
+          <br>
+          <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+          </div>
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary">Send Message</button>
+      </form>
+      
+      <script>
+      function sendEmail() {
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let subject = document.getElementById("subject").value;
+          let message = document.getElementById("message").value;
+      
+          // Regular expression for a valid email (text@text.end)
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+          if (!emailPattern.test(email)) {
+              alert("Please enter a valid email address (e.g., name@example.com).");
+              return;
+          }
+      
+          let mailtoLink = `mailto:victoriacarolaadolph@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
+      
+          window.location.href = mailtoLink;
+      }
+      </script>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Victoria's Blog | Built with Bootstrap</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

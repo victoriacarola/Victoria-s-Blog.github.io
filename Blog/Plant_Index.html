@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikoPlant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <label for="plantSelect">Select Your Plant:</label>
+            <select id="plantSelect">
+                <option value="default">Choose your plant</option>
+                <option value="monstera">Monstera Deliciosa</option>
+                <option value="snakeplant">Snake Plant</option>
+                <option value="peace_lily">Peace Lily</option>
+                </select>
+        </header>
+        <header>
+            <button id="settingsBtn">⚙️ Settings</button>
+            <button id="menuBtn">☰ Menu</button>
+        </header>
+
+        <div id="plantView">
+            <img id="plantImage" src="../assets/BG_simple.jpg" alt="Your Plant">
+        </div>
+
+        <footer>
+            <button id="cameraBtn">📷 Camera</button>
+            <button id="wateringBtn">💧 Water</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <style>body {
+        font-family: sans-serif;
+        margin: 0;
+        background-color: #f4f4f4; /* A light background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px; /* Adjust as needed */
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    header button, footer button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #e0e0e0;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    
+    #plantView {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        border: 1px solid #ccc; /* Placeholder for the plant area */
+        border-radius: 8px;
+        padding: 20px;
+    }
+    
+    #plantImage {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Ensures the image fits within the container */
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.watering-animation {
+    /* Example of a simple scaling animation */
+    animation: scalePlant 1s ease-in-out;
+}
+
+@keyframes scalePlant {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+</style>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Victoria's Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .navbar {
+      font-size: 22px;
+    }
+
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    /* Hero section with glass effect */
+    .hero {
+      background-image: url('../assets/nebel.jpg');
+      background-size: cover;
+      background-position: center;
+      color: rgb(34, 35, 37);
+      padding: 110px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    /* Card styling */
+    .card   {
+      
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card-title{
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #343a40;
+      color: #d1d1d1;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #555;
+      font-size: 1.2em; 
+    }
+
+    /* Button styling */
+    .btn-primary {
+      background-color: #1d467a;
+      border: none;
+      transition: background-color 0.3s;
+      font-size: 1.2em; /* Increases text size */
+      padding: 0.6em 1.1em; /* Adjusts padding for larger button size */
+    }
+    
+    .btn-secondary {
+      background-color: #1d467a;
+      border: none;
+      transition: background-color 0.3s;
+      font-size: 1em; /* Increases text size */
+      padding: 0.6em 1.1em; /* Adjusts padding for larger button size */
+    }
+
+    .btn-primary:hover {
+      background-color: #1d467a;
+    }
+
+    /* Adjust post-thumbnail for rounded corners */
+    .post-thumbnail {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    form {
+      font-size: 1.2em;
+    }
+
+    .form-control{
+        font-size: 20px;
+    }
+
+    .label{
+      font-size: 1.2em;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="e_home.html">Victoria's Blog</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="e_home.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                      <li><a class="dropdown-item" href="websites.html">Websites</a></li>
+                      <li><a class="dropdown-item" href="Apps.html">Apps</a></li>
+                      <li><a class="dropdown-item" href="api.html">API Softwares</a></li>
+                      <li><a class="dropdown-item" href="games.html">Games</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-3">Victoria's Blog</h1>
+      <p class="lead">Welcome to the musings of a software developer!</p>
+      
+      <a href="#blogPosts" class="btn btn-primary btn-lg">Check out my latest Projects</a>
+     <div>
+        <br><br>
+     </div> <br><br>
+      <h2>
+        Hy, my Name is Victoria and I'm a passionated Software Developer and I've created this blog to give you an better overview of my skills. As I'm always open for new challenges, new Projects and Critic, herethrought you're able to see all of my current and past private and business Projects.
+        This includes Softwares i created, Apps, mini Games, Ecommerce Pages, Websites and so on. 
+    
+    </h2>
+    </div>
+  </header>
+  
+<div>
+
+<br>
+</div>
+  <!-- Blog Section -->
+  <main class="container my-5" id="blogPosts">
+    <h2 class="mb-4">My Latest Projects</h2>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="..\assets\appstore.png" class="card-img-top post-thumbnail" alt="Post Thumbnail">
+          <div class="card-body">
+            <h5 class="card-title">Apps</h5>
+            <p class="card-text">Here you'll find the Apps I've created so far.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="..\assets\api.png" class="card-img-top post-thumbnail" alt="Post Thumbnail">
+          <div class="card-body">
+            <h5 class="card-title">API Softwares</h5>
+            <p class="card-text">Here you'll find the API softwares I've worked on so far.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="..\assets\gameboy.png" class="card-img-top post-thumbnail" alt="Post Thumbnail">
+          <div class="card-body">
+            <h5 class="card-title">Games</h5>
+            <p class="card-text">Here you'll find al the mini Games I've created and/ or adjusted so far.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="..\assets\website.png" class="card-img-top post-thumbnail" alt="Post Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Websites</h5>
+                <p class="card-text">Here you'll find all the Websites I've created so far</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="..\assets\ecommerce.png" class="card-img-top post-thumbnail" alt="Post Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Ecommerce shops</h5>
+                <p class="card-text">Here you'll find all my Ecommerce shops i made so far.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="..\assets\robotics.png" class="card-img-top post-thumbnail" alt="Post Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Robotics</h5>
+                <p class="card-text">Here you'll find all my robotic projects i made so far.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>       
+        <div>
+        </div>
+        <br><br><br><br><br>
+        <form onsubmit="sendEmail(); return false;">
+          <h2>If you have any further questions, requests or criticism, feel free to contact me.</h2>
+          <br>
+          <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+          </div>
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary">Send Message</button>
+      </form>
+      
+      <script>
+      function sendEmail() {
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let subject = document.getElementById("subject").value;
+          let message = document.getElementById("message").value;
+      
+          // Regular expression for a valid email (text@text.end)
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+          if (!emailPattern.test(email)) {
+              alert("Please enter a valid email address (e.g., name@example.com).");
+              return;
+          }
+      
+          let mailtoLink = `mailto:victoriacarolaadolph@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
+      
+          window.location.href = mailtoLink;
+      }
+      </script>
+        </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Victoria's Blog | Built with Bootstrap</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
